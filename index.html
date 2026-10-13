@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rede Raízes do Nordeste - Cardápio Multicanal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Banner LGPD -->
+    <div id="lgpd-banner" class="lgpd-banner">
+        <p>Respeitamos sua privacidade (LGPD). Utilizamos dados para melhorar sua experiência no App/Totem.</p>
+        <button onclick="aceitarLGPD()">Aceitar e Continuar</button>
+    </div>
+
+    <!-- Topo -->
+    <header>
+        <h1>Raízes do Nordeste</h1>
+        <div class="user-info">
+            <span>Cliente: <strong>KAUAN HEYMOWSKI</strong> (RU: 2237037)</span> | 
+            <span id="pontos-fidelidade">Pontos Club: 150 pts</span>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="container">
+        <section class="cardapio">
+            <h2>Cardápio Dinâmico</h2>
+            <div id="produtos-list" class="grid-produtos"></div>
+        </section>
+
+        <!-- Carrinho -->
+        <aside class="carrinho">
+            <h2>Seu Pedido</h2>
+            <div id="carrinho-itens">Carrinho vazio</div>
+            <div class="total-box">
+                <strong>Total: R$ <span id="total-valor">0.00</span></strong>
+            </div>
+            <button id="btn-checkout" onclick="processarPagamento()" disabled>Finalizar e Pagar</button>
+        </aside>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
